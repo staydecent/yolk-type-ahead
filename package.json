@@ -1,0 +1,36 @@
+{
+  "name": "yolk-type-ahead",
+  "version": "0.1.0",
+  "description": "A Yolk TypeAhead component.",
+  "author": "Adrian Unger <dev@staydecent.ca>",
+  "license": "MIT",
+  "homepage": "https://github.com/staydecent/yolk-type-ahead#readme", 
+  "main": "src/index.jsx",
+  "scripts": {
+    "start": "watchify src/index.jsx -o app.js -v -d -t [ babelify ]",
+    "reset": "git reset --hard origin/master && npm update yolk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/staydecent/yolk-type-ahead.git"
+  },
+  "keywords": [
+    "yolk",
+    "functional",
+    "component",
+    "typeahead",
+    "autocomplete"
+  ],
+  "dependencies": {
+    "yolk": "^1.0.0-beta.3",
+    "rxjs": "5.0.0-beta.6"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.7.5",
+    "babel-plugin-transform-react-jsx": "^6.7.5",
+    "babel-preset-es2015": "^6.6.0",
+    "babelify": "^7.2.0",
+    "browserify": "^12.0.1",
+    "watchify": "^3.6.1"
+  }
+}
